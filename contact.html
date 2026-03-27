@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Helma's Décor, LLC</title>
+  <meta name="description" content="Contact Helma's Décor, LLC for interior decorating consultations, artwork inquiries, or custom signage. Serving Fleming Island, Jacksonville, St. Johns & Clay Counties." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .contact-section {
+      padding: 80px 0;
+    }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-detail-icon {
+      font-size: 1.05rem;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: var(--blush);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pink);
+    }
+    .contact-detail-text h4 {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--pink);
+      margin-bottom: 0.2rem;
+    }
+    .contact-detail-text p, .contact-detail-text a {
+      font-size: 1rem;
+      color: var(--dark);
+      font-weight: 600;
+    }
+    .contact-detail-text a:hover { color: var(--pink); }
+    .service-area-note {
+      background: var(--blush);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border-left: 4px solid var(--pink);
+      margin-top: 2rem;
+    }
+    .service-area-note p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Helma's Décor, LLC Logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HERO
+  ====================================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('images/hero-contact.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="section-label" style="color:rgba(255,255,255,0.8);">We'd Love to Hear From You</p>
+      <h1>Get in Touch</h1>
+      <p class="hero-tagline">Your dream space starts with a conversation.</p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CONTACT SECTION
+  ====================================================== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: Contact Info -->
+        <div class="fade-in">
+
+          <p class="section-label">Contact Information</p>
+          <h2 class="section-title" style="margin-bottom:0.5rem;">Let's Talk</h2>
+          <div class="divider" style="margin-left:0; margin-bottom:2rem;"></div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-detail-text">
+              <h4>Phone</h4>
+              <a href="tel:9104732923">910-473-2923</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <!-- TODO: Replace with Helma's actual email address -->
+              <a href="mailto:hello@helmasdecor.com">hello@helmasdecor.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-detail-text">
+              <h4>Location</h4>
+              <p>Fleming Island, FL</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-map"></i></div>
+            <div class="contact-detail-text">
+              <h4>Service Area</h4>
+              <p>Jacksonville · St. Johns County · Clay County</p>
+            </div>
+          </div>
+
+          <div class="service-area-note">
+            <p><strong>Consultations are by appointment.</strong> We typically respond within 1–2 business days. Whether you need full-service decorating, a single room refresh, custom artwork, or a business sign — we'd love to hear about your project!</p>
+          </div>
+
+          <div class="contact-logo" style="margin-top:2.5rem;">
+            <img src="images/logo.jpg" alt="Helma's Décor, LLC" style="max-width:180px;" />
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="fade-in fade-in-delay-1">
+          <div class="contact-form-wrap">
+            <h3 style="font-size:1.4rem; margin-bottom:0.25rem;">Send Us a Message</h3>
+            <p style="color:var(--gray); font-size:0.9rem; margin-bottom:1.5rem;">Fill out the form below and Helma will be in touch soon!</p>
+
+            <!--
+              TO MAKE THIS FORM SEND EMAILS:
+              Option 1 — Formspree (free, no backend needed):
+                1. Sign up at https://formspree.io
+                2. Create a new form and copy your form ID
+                3. Replace the action attribute below:
+                   action="https://formspree.io/f/YOUR_FORM_ID"
+                4. Change method to "POST"
+
+              Option 2 — EmailJS (free, JavaScript-based):
+                1. Sign up at https://www.emailjs.com
+                2. Follow their setup guide to add their SDK
+            -->
+            <form action="#" method="POST" id="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="name">Your Name <span style="color:var(--pink);">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:var(--pink);">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span style="color:var(--gray); font-weight:400;">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="(904) 555-0000" />
+              </div>
+
+              <div class="form-group">
+                <label for="interest">I'm interested in... <span style="color:var(--pink);">*</span></label>
+                <select id="interest" name="interest" required style="width:100%; padding:0.75rem 1rem; border:2px solid #e8d0da; border-radius:8px; font-family:'Lato',sans-serif; font-size:1rem; color:var(--dark); background:white; outline:none; cursor:pointer;">
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="decorating">Interior Decorating Services</option>
+                  <option value="consultation">Free Consultation</option>
+                  <option value="artwork">Original Artwork / Paintings</option>
+                  <option value="beach-art">Beach Plaques &amp; Coastal Décor</option>
+                  <option value="signage">Custom Commercial Signage</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span style="color:var(--pink);">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your project, space, or what you have in mind..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:1rem;">
+                Send Message
+              </button>
+
+              <p class="form-note">We typically respond within 1–2 business days. We look forward to hearing from you!</p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       QUICK INFO STRIP
+  ====================================================== -->
+  <section class="section section-pink" style="padding: 50px 0;">
+    <div class="container">
+      <div class="grid-3 text-center">
+        <div class="fade-in">
+          <div style="font-size:1.8rem; margin-bottom:0.5rem; color:white;"><i class="fa-solid fa-palette"></i></div>
+          <h3 style="color:white; font-family:'Lato',sans-serif; font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Licensed &amp; Certified</h3>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.9rem;">Professionally certified interior decorator</p>
+        </div>
+        <div class="fade-in fade-in-delay-1">
+          <div style="font-size:1.8rem; margin-bottom:0.5rem; color:white;"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 style="color:white; font-family:'Lato',sans-serif; font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Fleming Island, FL</h3>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.9rem;">Serving Jacksonville, St. Johns &amp; Clay Counties</p>
+        </div>
+        <div class="fade-in fade-in-delay-2">
+          <div style="font-size:1.8rem; margin-bottom:0.5rem; color:white;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 style="color:white; font-family:'Lato',sans-serif; font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">No Job Too Small</h3>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.9rem;">Every project receives the same personal attention</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="Helma's Décor, LLC" />
+          <p>"Elegance at an Affordable Price"</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="tel:9104732923">910-473-2923</a></p>
+          <p><a href="mailto:hello@helmasdecor.com">hello@helmasdecor.com</a></p>
+          <p style="margin-top:0.8rem; font-size:0.85rem;">Fleming Island, FL<br />Serving Jacksonville,<br />St. Johns &amp; Clay Counties</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Helma's Décor, LLC. All rights reserved. | Website by <a href="https://coreyburgos.com" target="_blank" rel="noopener">Corey Burgos</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

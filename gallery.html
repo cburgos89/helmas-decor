@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Helma's Décor, LLC</title>
+  <meta name="description" content="Browse our portfolio of interior decorated rooms, original artwork, beach art, seasonal decor, and outdoor spaces." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Helma's Décor, LLC Logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HERO
+  ====================================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('images/hero-gallery.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="section-label" style="color:rgba(255,255,255,0.8);">Our Portfolio</p>
+      <h1>Our Work</h1>
+      <p class="hero-tagline"><em>"Every room tells a story."</em></p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       GALLERY SECTION
+  ====================================================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+        <button class="filter-btn" data-filter="artwork">Artwork</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <!-- ==================== INTERIORS (19) ==================== -->
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-1.jpg" alt="Coastal living room with sectional sofa and peach walls" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-2.jpg" alt="Living room sofa with pink accent pillow and shelf display" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-3.jpg" alt="Warm living room with abstract art wall and sectional" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-4.jpg" alt="Living room with navy curtains and ivy garland" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-5.jpg" alt="Dining room with pendant drum lighting" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-6.jpg" alt="Kitchen bar area with bar stools and lemon decor" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-7.jpg" alt="Coastal bathroom with seashell shower curtain and accessories" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-8.jpg" alt="Rattan sofa with tropical leaf cushions" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-9.jpg" alt="Rattan sofa set with coastal art and fan wall decor" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-10.jpg" alt="Dining room with white chairs, floral centerpiece, and coastal decor" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-11.jpg" alt="Coastal bathroom seashell hook accessories" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-12.jpg" alt="Beach-themed bedroom with ladder shelf and teal walls" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-13.jpg" alt="Coastal bathroom with seashell towels and shell accessories" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-14.jpg" alt="Living room with sectional sofa, china cabinet, and pink walls" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-15.jpg" alt="Living room sectional with pool view through sliding door" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-16.jpg" alt="Master bathroom soaking tub with marble tile and palm tree towels" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-17.jpg" alt="Warm living room with large sectional and abstract art" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-18.jpg" alt="Living room with bold orange accent wall and media console" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/interior-19.jpg" alt="Coastal nautical bedroom with fish net wall decor and lighthouse accents" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <!-- ==================== ARTWORK (12) ==================== -->
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-1.jpg" alt="Cheers — hand-painted commercial bar sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-2.jpg" alt="Living room with abstract painting collection displayed in gold frames" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-3.jpg" alt="April Showers Bring May Flowers — hand-painted oval chalkboard sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-4.jpg" alt="TJ's Pumpkin Patch — hand-painted commercial chalkboard" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-5.jpg" alt="Mandarin Munchies — large hand-painted commercial sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-6.jpg" alt="Effortless Entertaining — hand-painted chalkboard sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-7.jpg" alt="Back to School — hand-painted commercial chalkboard" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-8.jpg" alt="Honey O's — hand-painted commercial store sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-9.jpg" alt="Joe-Joe's Chocolate Vanilla — hand-painted commercial sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-10.jpg" alt="Artisan Bread — hand-painted commercial chalkboard sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-11.jpg" alt="Tropical Treats — hand-painted commercial sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/artwork-12.jpg" alt="Hydration Station — hand-painted commercial sign" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <!-- ==================== BEACH ART (4) ==================== -->
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/beach-art-1.jpg" alt="Life is Good at the Beach — hand-painted plaque" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/beach-art-2.jpg" alt="Beach Life — hand-painted plaque with starfish and glitter" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/beach-art-3.jpg" alt="Beach wave painting with real starfish and shell" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <div class="gallery-item-inner">
+            <img src="images/beach-art-4.jpg" alt="The Island Oasis — hand-painted round plaque with palm trees" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <!-- ==================== SEASONAL (8) ==================== -->
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-1.jpg" alt="Christmas coffee table with lace runner and wine glasses" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-2.jpg" alt="Christmas porch with Santa and poinsettia" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-3.jpg" alt="Fall planter with mums and mini pumpkin" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-4.jpg" alt="Fall hallway entryway with pumpkins and wood-look flooring" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-5.jpg" alt="Hello Fall porch sign with colorful mums" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-6.jpg" alt="Vintage Christmas sled decoration with poinsettia wreath and gifts" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-7.jpg" alt="Decorated Christmas tree with ornaments and warm lights" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal">
+          <div class="gallery-item-inner">
+            <img src="images/seasonal-8.png" alt="Happy Fall Y'all — hand-painted sign with pumpkin and sunflowers" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <!-- ==================== OUTDOOR (3) ==================== -->
+        <div class="gallery-item" data-category="outdoor">
+          <div class="gallery-item-inner">
+            <img src="images/outdoor-1.jpg" alt="Screened lanai with teak furniture and tropical rug" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="outdoor">
+          <div class="gallery-item-inner">
+            <img src="images/outdoor-2.png" alt="Coastal wall decor with fish net and seashells" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="outdoor">
+          <div class="gallery-item-inner">
+            <img src="images/outdoor-3.jpg" alt="Florida hibiscus garden in pink, yellow, and coral" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+
+      </div><!-- /gallery-grid -->
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CTA
+  ====================================================== -->
+  <section class="section section-blush">
+    <div class="container text-center fade-in">
+      <p class="section-label">Love What You See?</p>
+      <h2 class="section-title">Let's Create Your Dream Space</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Every project is uniquely yours. Reach out to start the conversation — consultations are always personalized to your style and budget.</p>
+      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       LIGHTBOX
+  ====================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8592;</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8594;</button>
+  </div>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="Helma's Décor, LLC" />
+          <p>"Elegance at an Affordable Price"</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="tel:9104732923">910-473-2923</a></p>
+          <p><a href="mailto:hello@helmasdecor.com">hello@helmasdecor.com</a></p>
+          <p style="margin-top:0.8rem; font-size:0.85rem;">Fleming Island, FL<br />Serving Jacksonville,<br />St. Johns &amp; Clay Counties</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Helma's Décor, LLC. All rights reserved. | Website by <a href="https://coreyburgos.com" target="_blank" rel="noopener">Corey Burgos</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
