@@ -112,12 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('lightbox-open');
   }
 
   function closeLightbox() {
     lightbox.classList.remove('open');
-    document.body.style.overflow = '';
+    document.body.classList.remove('lightbox-open');
     lightboxImg.src = '';
   }
 
