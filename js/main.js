@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let visibleItems = [];
   let currentIndex = 0;
+  let scrollY = 0;
 
   function openLightbox(clickedItem) {
     visibleItems = [...document.querySelectorAll('.gallery-item')]
@@ -112,12 +113,18 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightbox.classList.add('open');
+    // Save scroll position then lock body in place (iOS scroll-lock technique)
+    scrollY = window.scrollY;
+    document.body.style.top = `-${scrollY}px`;
     document.body.classList.add('lightbox-open');
   }
 
   function closeLightbox() {
     lightbox.classList.remove('open');
     document.body.classList.remove('lightbox-open');
+    document.body.style.top = '';
+    // Restore scroll position without visible jump
+    window.scrollTo({ top: scrollY, behavior: 'instant' });
     lightboxImg.src = '';
   }
 

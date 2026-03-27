@@ -1003,11 +1003,11 @@ p:last-child { margin-bottom: 0; }
 /* ============================================================
    Lightbox
    ============================================================ */
-/* Prevents background scroll on mobile Safari when lightbox is open */
+/* Prevents background scroll on iOS when lightbox is open */
 body.lightbox-open {
   position: fixed;
   width: 100%;
-  overflow: hidden;
+  overflow-y: scroll; /* keeps scrollbar gutter, prevents layout shift */
 }
 
 .lightbox {
