@@ -98,6 +98,85 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeEls.forEach(el => observer.observe(el));
   }
 
+  /* ----------------------------------------------------------
+     Phone Number Auto-format
+  ---------------------------------------------------------- */
+  const phoneInput = document.getElementById('phone');
+  if (phoneInput) {
+    phoneInput.addEventListener('keydown', (e) => {
+      // Allow: backspace, delete, tab, escape, arrows, home, end
+      const allowed = ['Backspace','Delete','Tab','Escape','ArrowLeft','ArrowRight','Home','End'];
+      if (allowed.includes(e.key)) return;
+      // Block anything that isn't a digit
+      if (!/^\d$/.test(e.key)) e.preventDefault();
+    });
+
+    phoneInput.addEventListener('input', () => {
+      const digits = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+      let formatted = '';
+      if (digits.length > 6) {
+        formatted = `(${digits.slice(0,3)}) ${digits.slice(3,6)}-${digits.slice(6)}`;
+      } else if (digits.length > 3) {
+        formatted = `(${digits.slice(0,3)}) ${digits.slice(3)}`;
+      } else if (digits.length > 0) {
+        formatted = `(${digits}`;
+      }
+      phoneInput.value = formatted;
+    });
+  }
+
+  /* ----------------------------------------------------------
+     Contact Form — AJAX Submit
+  ---------------------------------------------------------- */
+  const contactForm = document.getElementById('contact-form');
+  const submitBtn   = document.getElementById('contact-submit');
+  const feedbackDiv = document.getElementById('form-feedback');
+
+  if (contactForm && submitBtn && feedbackDiv) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      submitBtn.disabled    = true;
+      submitBtn.textContent = 'Sending\u2026';
+      feedbackDiv.style.display = 'none';
+
+      try {
+        const res = await fetch('contact.php', {
+          method:  'POST',
+          body:    new FormData(contactForm),
+          headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        });
+        let data;
+        try { data = await res.json(); }
+        catch (_) { data = { success: false, message: 'Unexpected server response. Please try again.' }; }
+
+        feedbackDiv.style.display = 'block';
+        if (data.success) {
+          feedbackDiv.textContent      = data.message;
+          feedbackDiv.style.background = '#d4edda';
+          feedbackDiv.style.color      = '#155724';
+          feedbackDiv.style.border     = '1px solid #c3e6cb';
+          contactForm.reset();
+          submitBtn.textContent = 'Message Sent';
+        } else {
+          feedbackDiv.textContent      = data.message || 'Something went wrong. Please try again.';
+          feedbackDiv.style.background = '#f8d7da';
+          feedbackDiv.style.color      = '#721c24';
+          feedbackDiv.style.border     = '1px solid #f5c6cb';
+          submitBtn.disabled    = false;
+          submitBtn.textContent = 'Send Message';
+        }
+      } catch (_) {
+        feedbackDiv.style.display      = 'block';
+        feedbackDiv.textContent        = 'Network error. Please check your connection and try again.';
+        feedbackDiv.style.background   = '#f8d7da';
+        feedbackDiv.style.color        = '#721c24';
+        feedbackDiv.style.border       = '1px solid #f5c6cb';
+        submitBtn.disabled    = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    });
+  }
+
   if (!lightbox) return;
 
   let visibleItems = [];
