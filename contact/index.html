@@ -6,7 +6,7 @@
   <title>Contact — Helma's Décor, LLC</title>
   <meta name="description" content="Contact Helma's Décor, LLC for interior decorating consultations, artwork inquiries, or custom signage. Serving Fleming Island, Jacksonville, St. Johns & Clay Counties." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <style>
     .contact-section {
       padding: 80px 0;
@@ -67,26 +67,26 @@
     }
   </style>
 </head>
-<body>
+<body data-page="contact">
 
   <!-- ======================================================
        NAVIGATION
   ====================================================== -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.jpg" alt="Helma's Décor, LLC Logo" />
+      <a href="/" class="nav-logo">
+        <img src="../images/logo.jpg" alt="Helma's Décor, LLC Logo" />
       </a>
       <button class="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../gallery/">Gallery</a></li>
+        <li><a href="../shop/">Shop</a></li>
+        <li><a href="../contact/" class="btn btn-primary">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -95,7 +95,7 @@
        PAGE HERO
   ====================================================== -->
   <section class="page-hero">
-    <div class="page-hero-bg" style="background-image: url('images/hero-contact.jpg');"></div>
+    <div class="page-hero-bg" style="background-image: url('../images/hero-contact.jpg');"></div>
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
       <p class="section-label" style="color:rgba(255,255,255,0.8);">We'd Love to Hear From You</p>
@@ -156,7 +156,7 @@
           </div>
 
           <div class="contact-logo" style="margin-top:2.5rem;">
-            <img src="images/logo.jpg" alt="Helma's Décor, LLC" style="max-width:180px;" />
+            <img src="../images/logo.jpg" alt="Helma's Décor, LLC" style="max-width:180px;" />
           </div>
 
         </div>
@@ -180,7 +180,7 @@
                 1. Sign up at https://www.emailjs.com
                 2. Follow their setup guide to add their SDK
             -->
-            <form action="contact.php" method="POST" id="contact-form" novalidate>
+            <form action="../contact.php" method="POST" id="contact-form" novalidate>
 
               <!-- Honeypot: hidden from real users, filled by bots — do not remove -->
               <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
@@ -269,18 +269,18 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-logo">
-          <img src="images/logo.jpg" alt="Helma's Décor, LLC" />
+          <img src="../images/logo.jpg" alt="Helma's Décor, LLC" />
           <p>"Elegance at an Affordable Price"</p>
         </div>
         <div>
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="../services/">Services</a></li>
+            <li><a href="../gallery/">Gallery</a></li>
+            <li><a href="../shop/">Shop</a></li>
+            <li><a href="../contact/">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -297,6 +297,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

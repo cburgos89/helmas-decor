@@ -5,15 +5,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ----------------------------------------------------------
-     Active Nav Link
+     Active Nav Link (uses data-page on <body>)
   ---------------------------------------------------------- */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a:not(.btn)').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
+  const currentPage = document.body.dataset.page;
+  if (currentPage) {
+    const pageLabels = { home: 'Home', about: 'About', services: 'Services', gallery: 'Gallery', shop: 'Shop' };
+    const targetLabel = pageLabels[currentPage];
+    document.querySelectorAll('.nav-links a:not(.btn)').forEach(link => {
+      if (link.textContent.trim() === targetLabel) {
+        link.classList.add('active');
+      }
+    });
+  }
 
   /* ----------------------------------------------------------
      Hamburger Menu
@@ -140,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       feedbackDiv.style.display = 'none';
 
       try {
-        const res = await fetch('contact.php', {
+        const res = await fetch(contactForm.action, {
           method:  'POST',
           body:    new FormData(contactForm),
           headers: { 'X-Requested-With': 'XMLHttpRequest' },
