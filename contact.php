@@ -6,7 +6,7 @@
  * header injection prevention, interest whitelist, JSON-only responses.
  */
 
-require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/lib/phpmailer/Exception.php';
 require_once __DIR__ . '/lib/phpmailer/PHPMailer.php';
 require_once __DIR__ . '/lib/phpmailer/SMTP.php';
@@ -91,7 +91,7 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = MAIL_USERNAME;
     $mail->Password   = MAIL_PASSWORD;
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = MAIL_PORT;
     $mail->CharSet    = 'UTF-8';
 
