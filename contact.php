@@ -6,10 +6,14 @@
  * header injection prevention, interest whitelist, JSON-only responses.
  */
 
-require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/lib/phpmailer/Exception.php';
-require_once __DIR__ . '/lib/phpmailer/PHPMailer.php';
-require_once __DIR__ . '/lib/phpmailer/SMTP.php';
+// Never expose PHP errors to the browser
+ini_set('display_errors', '0');
+error_reporting(0);
+
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/phpmailer/phpmailer/Exception.php';
+require_once __DIR__ . '/phpmailer/phpmailer/PHPMailer.php';
+require_once __DIR__ . '/phpmailer/phpmailer/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
