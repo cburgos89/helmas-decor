@@ -103,17 +103,19 @@ try {
     $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
     $mail->addAddress(MAIL_RECIPIENT);
     $mail->addReplyTo($email, $name); // so Helma can just hit Reply
+    $mail->XMailer = ' '; // suppress default PHPMailer header
 
     // Content
     $mail->isHTML(false);
-    $mail->Subject = "New Inquiry from {$name} \u{2014} Helma's D\u{00E9}cor";
-    $mail->Body    = "New contact form submission from Helma's Décor website.\n\n"
+    $mail->Subject = "Message from {$name} via helmasdecor.com";
+    $mail->Body    = "Hi Helma,\n\n"
+                   . "You have a new message from your website contact form.\n\n"
                    . "Name:     {$name}\n"
                    . "Email:    {$email}\n"
                    . "Phone:    " . ($phone ?: 'Not provided') . "\n"
                    . "Interest: {$interest_labels[$interest]}\n\n"
                    . "Message:\n{$message}\n"
-                   . "\n--\nSent via helmasdecor.com contact form";
+                   . "\n--\nHelma's Décor, LLC | helmasdecor.com";
 
     $mail->send();
 
